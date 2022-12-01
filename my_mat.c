@@ -65,11 +65,11 @@ void mat_B(int mat [SIZE][SIZE])
     scanf("%d",&j);
     if (mat[i][j] == 0 || mat[i][j] == INFINITY)
     {
-        printf("\nFalse");
+        printf("False\n");
     }
     else
     {
-        printf("\nTrue");
+        printf("True\n");
     }
 }
 
@@ -82,10 +82,10 @@ void mat_C(int mat [SIZE][SIZE])
     scanf("%d",&j);
     if (mat[i][j] == 0 || mat[i][j] == INFINITY)
     {
-        printf("\n%d", -1);
+        printf("%d\n", -1);
     }
     else
     {
-        printf("\n%d", mat[i][j]);
+        printf("%d\n", mat[i][j]);
     }
 }
