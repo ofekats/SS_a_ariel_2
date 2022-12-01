@@ -19,15 +19,6 @@ void fw_algo(int mat [SIZE][SIZE])
             }
         }
     }
-    // printf("after algo:\n");
-    // for(int i = 0; i<SIZE; i++)
-    // {
-    //     for(int j = 0; j<SIZE; j++)
-    //     {
-    //         printf("%d ",mat[i][j]);
-    //     }
-    //     printf("\n");
-    // }
 }
 
 void mat_A(int mat [SIZE][SIZE])
@@ -36,7 +27,6 @@ void mat_A(int mat [SIZE][SIZE])
     {
         for(int j = 0; j<SIZE; j++)
         {
-            //printf("Enter a number to be in [%d,%d]: ",i,j);
             scanf("%d",&mat[i][j]);
             if (mat[i][j] == 0 && i != j)
             {
@@ -44,23 +34,12 @@ void mat_A(int mat [SIZE][SIZE])
             }
         }
     }
-    // printf("from A:\n");
-    // for(int i = 0; i<SIZE; i++)
-    // {
-    //     for(int j = 0; j<SIZE; j++)
-    //     {
-    //         printf("%d ",mat[i][j]);
-    //     }
-    //     printf("\n");
-    // }
     fw_algo(mat);
 }
 
 void mat_B(int mat [SIZE][SIZE])
 {
-    //fw_algo(mat);
     int i,j =0;
-    // printf("Enter i,j: ");
     scanf("%d",&i);
     scanf("%d",&j);
     if (mat[i][j] == 0 || mat[i][j] == INFINITY)
@@ -75,9 +54,7 @@ void mat_B(int mat [SIZE][SIZE])
 
 void mat_C(int mat [SIZE][SIZE])
 {
-    //fw_algo(mat);
     int i,j = 0;
-    // printf("Enter i,j: ");
     scanf("%d",&i);
     scanf("%d",&j);
     if (mat[i][j] == 0 || mat[i][j] == INFINITY)

@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "my_mat.h"
-//#include "my_mat.c"
 
 #define SIZE 10
 
@@ -10,7 +9,6 @@ int main()
     char c ='A';
     while(c != 'D')
     {
-        //printf("\nEnter A/B/C/D:");
         scanf("%c", &c);
         switch (c)
         {
