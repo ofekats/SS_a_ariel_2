@@ -2,11 +2,8 @@ FLAG = -Wall -g
 
 all: connections
 
-connections: main.o my_mat.o #lib
+connections: main.o my_mat.o
 	gcc $(FLAG) -o connections main.o my_mat.o
-
-# lib: main.o my_mat.o
-#
 
 main.o: main.c my_mat.h
 	gcc $(FLAG) -c main.c
